@@ -41,4 +41,4 @@ Or via GitHub
 python -m pip install https://github.com/deknowny/rate-limit-semaphore/archive/main.zip
 ```
 # Contributing
-Check out [site Contributing section](https://deknowny.github.io/rate-limit-semaphore/latest/contributing/)
+Check out [Contributing section](./CONTRIBUTING.md)
