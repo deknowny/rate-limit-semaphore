@@ -1,0 +1,67 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "ralisem"
+version = "0.1.0a0"
+description = "Rate limit semaphore for async-style   (any core)"
+authors = ["Yan Kurbatov <deknowny@gmail.com>"]
+license = "MIT"
+homepage = "https://github.com/deknowny/rate-limit-semaphore"
+documentation = "https://deknowny.github.io/rate-limit-semaphore/latest/"
+readme = "README.md"
+keywords = []  # Search keywords (max 5)
+classifiers = []  # PyPI classifiers
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+# Place dev dependencies here bacause
+# they do not support `extras`.
+# So if you use `mypy` as dev dependencies
+# And run tests on `pypy`, you will see an error.
+# That means some libs are not supported on some python
+# Implementations
+black = {optional = true, version = "^21.11b1"}
+isort = {optional = true, version = "^5.10.1"}
+pre-commit = {optional = true, version="^2.15.0"}
+pytest = {optional = true, version = "^6.2.5"}
+pytest-cov = {optional = true, version="^3.0.0"}
+coveralls = {optional = true, version="^3.3.1"}
+coverage = {optional = true, version="^6.1.2"}
+bumpversion = {optional = true, version="^0.5.3"}
+autoflake = {optional = true, version="^1.4"}
+mypy = {optional = true, version="^0.930"}
+mkdocs = {optional = true, version="^1.2.3"}
+mkdocs-material = {optional = true, version="^8.0.2"}
+mike = {optional = true, version="^1.1.2"}
+
+[tool.poetry.extras]
+# Ordinary extra dependencies
+all = []
+
+# Development etra dependencies
+dev-style = ["black", "isort", "pre-commit", "autoflake"]
+dev-test = ["pytest", "pytest-cov", "coveralls", "coverage"]
+dev-check = ["mypy"]
+dev-deploy = ["bumpversion"]
+dev-docs = ["mkdocs", "mkdocs-material", "mike"]
+dev-all = [
+    "black", "isort", "pre-commit",
+    "pytest", "pytest-cov",
+    "coveralls", "coverage",
+    "mypy",
+    "bumpversion",
+    "autoflake",
+    "mkdocs", "mkdocs-material", "mike"
+]
+
+
+[tool.black]
+line-length = 78
+
+[tool.isort]
+profile = "wemake"
+src_paths = ["ralisem", "tests"]
+line_length = 78

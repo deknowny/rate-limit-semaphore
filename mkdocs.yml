@@ -1,0 +1,56 @@
+# Title of the site
+site_name: ralisem
+
+# Description of the site
+site_description: Rate limit semaphore for async-style   (any core)
+
+# URL for pages editing
+repo_url: https://github.com/deknowny/rate-limit-semaphore/tree/main
+
+# Branch chosen when routing to repository
+remote_branch: main
+
+# Site's content
+nav:
+  - Home: index.md
+  - For contributors: contributing.md
+  - User Guide:
+    - Introduction: user-guide/index.md
+  - Advanced Guide:
+      - Introduction: advanced-guide/index.md
+
+
+# Theme preference. Use `mkdocs-material`
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: brown
+      accent: amber
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue grey
+      accent: amber
+      toggle:
+        icon: material/lightbulb
+        name: Switch to light mode
+  font:
+    text: Ubuntu
+    code: Monaco
+  features:
+    - header.autohide
+
+
+extra_css:
+  - stylesheets/slate.css
+
+extra:
+  version:
+    provider: mike
+    default: latest
+
+# Material extensions
+markdown_extensions:
+  - admonition
