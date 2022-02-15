@@ -7,6 +7,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/deknowny/rate-limit-semaphore/badge.svg?branch=main)](https://coveralls.io/github/deknowny/rate-limit-semaphore?branch=main)
 ***
 There are two implementations of rate limit semaphore. Live demo shows how [FixedNewFirstDelaySemaphore](./examples/new_first.py) and [FixedNewPreviousDelaySemaphore](./example/new_previous.py) work
+***
 ![Live demo](./assets/new-first-live-demo.gif)
 ![Live demo](./assets/new-previous-live-demo.gif)
 
