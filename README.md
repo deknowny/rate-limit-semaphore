@@ -6,7 +6,7 @@
 ![PyPI](https://img.shields.io/pypi/v/ralisem)
 [![Coverage Status](https://coveralls.io/repos/github/deknowny/rate-limit-semaphore/badge.svg?branch=main)](https://coveralls.io/github/deknowny/rate-limit-semaphore?branch=main)
 ***
-There are two implementations of rate limit semaphore. Live demo shows how [FixedNewPreviousDelaySemaphore](./example/new_previous.py) and [FixedNewFirstDelaySemaphore](./examples/new_first.py) work
+There are two implementations of rate limit semaphore. Live demo shows how [FixedNewPreviousDelaySemaphore](./examples/new_previous.py) and [FixedNewFirstDelaySemaphore](./examples/new_first.py) work
 ***
 ![Live demo](./assets/new-previous-live-demo.gif)
 ![Live demo](./assets/new-first-live-demo.gif)
@@ -29,7 +29,7 @@ Difference:
 * `FixedNewFirstDelaySemaphore`: Sures first and last in series (serias is `access_times`) have a fixed delay (`per`)
 
 ## Methods
-All of these implementations are inherited from one base `TimeRateLimitSemaphoreBase`. Check out full methods [here](./ralisem/base.py
+All of these implementations are inherited from one base `TimeRateLimitSemaphoreBase`. Check out full methods [here](./ralisem/base.py)
 
 # Installation
 Via PyPI:
