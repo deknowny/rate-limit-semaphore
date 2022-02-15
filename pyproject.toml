@@ -4,7 +4,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "ralisem"
-version = "0.1.0a0"
+version = "0.1.0"
 description = "Rate limit semaphore for async-style   (any core)"
 authors = ["Yan Kurbatov <deknowny@gmail.com>"]
 license = "MIT"
