@@ -1,4 +1,4 @@
-# ralisem
+# Rate Limit Semaphore
 > Rate limit semaphore for async-style (any core)
 
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/ralisem)
